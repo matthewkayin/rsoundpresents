@@ -17,6 +17,15 @@ body{
     same with site-header and nav-button
 */
 
+#scroll-follow-container{
+
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
 #site-header-container{
 
     background-color: #ffffff;
@@ -27,6 +36,8 @@ body{
 #site-header{
 
     padding: 10px 0px;
+
+    transition-duration: 0.2s;
 }
 
 #site-nav-container{
@@ -46,6 +57,8 @@ body{
     padding: 10px 10px;
     font-size: 16px;
     display: inline-block;
+
+    transition-duration: 0.2s;
 }
 
 .nav-link{
@@ -56,6 +69,8 @@ body{
 }
 
 #landing-image-container{
+
+    margin-top: 93px;
 
     text-align: center;
     position: relative;
@@ -85,9 +100,6 @@ body{
     letter-spacing: 1px;
     line-height: 0.8;
 
-    display: block;
-    position: absolute;
-
     top: 35%;
 }
 
@@ -100,9 +112,6 @@ body{
 
     font-size: 14px;
     letter-spacing: 0px;
-
-    display: block;
-    position: absolute;
 
     top: 55%;
 }
@@ -170,4 +179,65 @@ body{
     width: 90%;
     left: 5%;
     padding-bottom: 15px;
+}
+
+#performers-container{
+
+    margin-top: 15px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.perf-container{
+
+    position: relative;
+    width: 70%;
+    left: 15%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.perf-img{
+
+    width: 100%;
+}
+
+.perf-overlay{
+
+    width: 100%;
+
+    transition-duration: 0.7s;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#pover1{
+
+    opacity: 0.0;
+}
+
+.perf-overlay:hover{
+
+    opacity: 1.0;
+}
+
+.perf-title{
+
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+
+    display: block;
+    position: absolute;
+
+    padding: 5px;
+    width: 85%;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
 }
