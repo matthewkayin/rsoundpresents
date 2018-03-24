@@ -12,8 +12,3 @@ window.onscroll = function() {
         }
     }
 };
-
-function revealInfo() {
-
-    document.write("hello");
-}

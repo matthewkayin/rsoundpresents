@@ -5,6 +5,10 @@
         <meta charset="UTF-8">
         <title>R Sound Presents</title>
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+            var smoothScroll = new SmoothScroll('a[href*="#"]');
+        </script>
         <script src="js/index.js"></script>
     </head>
 
@@ -16,9 +20,9 @@
             <div id="site-nav-container">
                 <ul id="navigation">
                     <a href="#" class="nav-link"><p id="nav-home" class="nav-button">HOME</h2></a>
-                    <a href="#" class="nav-link"><p id="nav-home" class="nav-button">ABOUT</h2></a>
-                    <a href="#" class="nav-link"><p id="nav-home" class="nav-button">LINEUP</h2></a>
-                    <a href="#" class="nav-link"><p id="nav-home" class="nav-button">CONTACT</h2></a>
+                    <a href="#about" class="nav-link"><p id="nav-home" class="nav-button">ABOUT</h2></a>
+                    <a href="#performers" class="nav-link"><p id="nav-home" class="nav-button">LINEUP</h2></a>
+                    <a href="#contact" class="nav-link"><p id="nav-home" class="nav-button">CONTACT</h2></a>
                 </ul>
             </div>
         </div>
@@ -30,6 +34,7 @@
         </div>
 
         <div id="about-container">
+            <a class="anchor" id="about"></a>
             <h1 class="section-title">ABOUT THE SHOW</h1>
             <p id="about-desc">R Sound Presents is a local music and poetry show hosted at
                 R Coffee House (1144 N Bitting Ave). Every month we showcase some of the best musicians and poets from around
@@ -65,24 +70,80 @@
         </div>
 
         <div id="performers-container">
+            <a class="anchor" id="performers"></a>
             <h1 class="section-title">MEET THE PERFORMERS</h1>
             <div class="perf-container">
                 <img src="res/kenon.jpg" class="perf-img">
-                <img src="overlay.png" class="perf-overlay" id="pover1" onmouseover="document.write('what the fuck')">
+                <div class="hovered-stuff">
+                    <img src="overlay.png" class="perf-overlay">
+                    <div class="perf-social-container">
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/facebook.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/instagram.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/twitter.png"></a>
+                    </div>
+                </div>
                 <h1 class="perf-title">KENON BRINKLEY</h1>
             </div>
             <div class="perf-container">
                 <img src="res/kenon.jpg" class="perf-img">
+                <div class="hovered-stuff">
+                    <img src="overlay.png" class="perf-overlay">
+                    <div class="perf-social-container">
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/facebook.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/instagram.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/twitter.png"></a>
+                    </div>
+                </div>
                 <h1 class="perf-title">KENON BRINKLEY</h1>
             </div>
             <div class="perf-container">
                 <img src="res/kenon.jpg" class="perf-img">
+                <div class="hovered-stuff">
+                    <img src="overlay.png" class="perf-overlay">
+                    <div class="perf-social-container">
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/facebook.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/instagram.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/twitter.png"></a>
+                    </div>
+                </div>
                 <h1 class="perf-title">KENON BRINKLEY</h1>
             </div>
             <div class="perf-container">
                 <img src="res/kenon.jpg" class="perf-img">
+                <div class="hovered-stuff">
+                    <img src="overlay.png" class="perf-overlay">
+                    <div class="perf-social-container">
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/facebook.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/instagram.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/twitter.png"></a>
+                    </div>
+                </div>
                 <h1 class="perf-title">KENON BRINKLEY</h1>
             </div>
+            <div class="perf-container">
+                <img src="res/kenon.jpg" class="perf-img">
+                <div class="hovered-stuff">
+                    <img src="overlay.png" class="perf-overlay">
+                    <div class="perf-social-container">
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/facebook.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/instagram.png"></a>
+                        <a href="facebook.com/bleh"><img class="social-icon" src="res/sm/twitter.png"></a>
+                    </div>
+                </div>
+                <h1 class="perf-title">KENON BRINKLEY</h1>
+            </div>
+        </div>
+
+        <div id="contact-container">
+            <a class="anchor" id="contact"></a>
+            <h1 class="section-title contact-header">CONTACT US</h1>
+            <p class="contact-desc">Follow R Sound on social media to see media from the shows and to be the first to hear of show dates each month!</p>
+            <div class="social-icon-container">
+                <a href="https://www.facebook.com/RSOUNDPRESENTS/"><img class="social-icon" src="res/sm/facebook.png"></a>
+                <a href="https://www.instagram.com/rsoundpresents/"><img class="social-icon" src="res/sm/instagram.png"></a>
+                <a href="https://twitter.com/rsoundpresents"><img class="social-icon" src="res/sm/twitter.png"></a>
+            </div>
+            <p class="contact-desc">R Sound is <b>not</b> an open mic! Want to perform? Contact Kenon Brinkley at (316) 308 - 7551.</p>
         </div>
 
     </body>

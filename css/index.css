@@ -17,12 +17,19 @@ body{
     same with site-header and nav-button
 */
 
+.anchor{
+
+    position: relative;
+    display: block;
+    visibility: hidden;
+    top: -90px;
+}
+
 #scroll-follow-container{
 
     position: fixed;
     top: 0;
-    z-index: 2;
-    height: 100%;
+    z-index: 4;
     width: 100%;
 }
 
@@ -55,7 +62,7 @@ body{
 .nav-button{
 
     padding: 10px 10px;
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
 
     transition-duration: 0.2s;
@@ -186,6 +193,7 @@ body{
     margin-top: 15px;
     background-color: #ffffff;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .perf-container{
@@ -205,27 +213,20 @@ body{
 .perf-overlay{
 
     width: 100%;
-
-    transition-duration: 0.7s;
-
     position: absolute;
     top: 0%;
     left: 0%;
-}
-
-#pover1{
-
-    opacity: 0.0;
+    z-index: 2; /* on hover won't work if you don't add this */
 }
 
 .perf-overlay:hover{
 
-    opacity: 1.0;
+    opacity: 1;
 }
 
 .perf-title{
 
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
 
     display: block;
@@ -240,4 +241,94 @@ body{
     left: 50%;
     top: 80%;
     transform: translate(-50%, -50%);
+
+    z-index: 3;
+}
+
+.perf-social-container{
+
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    width: 50%;
+
+    z-index: 4;
+}
+
+.hovered-stuff{
+
+    opacity: 0;
+    transition-duration: 0.7s;
+}
+
+.hovered-stuff:hover{
+
+    opacity: 1;
+}
+
+#contact-container{
+
+    background-color: #0a0a0a;
+    padding: 10px 0px;
+}
+
+.contact-header{
+
+    font-size: 28px;
+    color: #ffffff;
+    position: relative;
+    left: 15%;
+    padding-bottom: 0px;
+}
+
+.contact-desc{
+
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 10px 0px;
+}
+
+.social-icon-container{
+
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
+
+.social-icon{
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 321px){
+
+    .nav-button{
+
+        font-size: 16px;
+    }
+
+    .perf-title{
+
+        font-size: 20px;
+    }
+
+    .social-icon{
+
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    
 }
