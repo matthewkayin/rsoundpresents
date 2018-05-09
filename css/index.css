@@ -1,15 +1,232 @@
-body{
+* {
 
-    display: flex;
-    width: 80%;
-    left: 10%;
-    height: 100%;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
+    margin: 0px;
+    padding: 0px;
 }
 
-#message{
+body{
+
+    background-color: #e8e8e8;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*
+    Potential code cleaning that we might want to do:
+    site-header-container and site-nav-container in a class since they
+    have similar properties
+
+    same with site-header and nav-button
+*/
+
+.anchor{
+
+    position: relative;
+    display: block;
+    visibility: hidden;
+    top: -90px;
+}
+
+#scroll-follow-container{
+
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+}
+
+#site-header-container{
+
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+#site-header{
+
+    padding: 10px 0px;
+
+    transition-duration: 0.2s;
+}
+
+#site-nav-container{
+
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#navigation{
+
+    text-align: center;
+    width: 100%;
+}
+
+.nav-button{
+
+    padding: 10px 10px;
+    font-size: 14px;
+    display: inline-block;
+
+    transition-duration: 0.2s;
+}
+
+.nav-link{
+
+    text-decoration: none;
+    color: #2165ae;
+    letter-spacing: 1px;
+}
+
+#landing-image-container{
+
+    margin-top: 93px;
+
+    text-align: center;
+    position: relative;
+}
+
+#landing-image{
+
+    width: 100%;
+}
+
+.landing-text{
+
+    color: #ffffff;
+
+    display: block;
+    position: absolute;
+
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Be careful with the absolute positioning here */
+#image-header{
+
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 0.8;
+
+    top: 35%;
+}
+
+#header-preface{
+
+    font-size: 16px;
+}
+
+#image-subheading{
+
+    font-size: 14px;
+    letter-spacing: 0px;
+
+    top: 55%;
+}
+
+#about-container{
+
+    margin-top: 15px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-title{
+
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding: 15px 0px;
+}
+
+#about-desc{
+
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    display: block;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    padding-bottom: 15px;
+}
+
+#hosts-container{
+
+    margin-top: 15px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.host-container{
+
+    text-align: center;
+}
+
+.host-img{
+
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.host-header{
+
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 10px 0px;
+}
+
+.host-desc{
+
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    display: block;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    padding-bottom: 15px;
+}
+
+#performers-container{
+
+    margin-top: 15px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.perf-container{
+
+    position: relative;
+    width: 70%;
+    left: 15%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.perf-img{
+
+    width: 100%;
+}
+
+.perf-overlay{
+
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2; /* on hover won't work if you don't add this */
+}
+
+.perf-overlay:hover{
+
+    opacity: 1;
+}
+
+.perf-title{
 
     font-size: 18px;
     letter-spacing: 1px;
