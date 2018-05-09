@@ -585,7 +585,7 @@ body{
 
         width: 20px;
         height: 20px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 }
 
@@ -599,5 +599,12 @@ body{
     .host-desc{
 
         font-size: 24px;
+    }
+
+    .social-icon{
+
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
     }
 }
