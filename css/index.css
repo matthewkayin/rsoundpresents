@@ -337,6 +337,54 @@ body{
     padding: 10px 10px;
 }
 
+form{
+
+    position: relative;
+    width: 75%;
+    left: 15%;
+}
+
+input{
+
+    position: relative;
+    width: 90%;
+    height: 30px;
+    background-color: #ffffff;
+    border-style: solid;
+    margin: 5px 0px;
+}
+
+input:first-of-type{
+
+    margin-top: 0px;
+}
+
+textarea{
+
+    position: relative;
+    width: 90%;
+    height: 60px;
+    background-color: #ffffff;
+    border-style: solid;
+    margin-top: 5px;
+}
+
+button{
+
+    margin-top: 5px;
+    width: 40%;
+    height: 30px;
+    background-color: #79abcf;
+    border-color: #79abcf;
+    color: #000000;
+    border-style: solid;
+}
+
+#messagebox{
+
+    height: 60px;
+}
+
 @media only screen and (min-width: 321px){
 
     .nav-button{
